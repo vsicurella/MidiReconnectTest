@@ -27,7 +27,7 @@ void MainComponent::paint (juce::Graphics& g)
 
 void MainComponent::resized()
 {
-    textBox->setBounds(getLocalBounds().withTop(getHeight() * 0.5));
+    textBox->setBounds(getLocalBounds());
 }
 
 void MainComponent::handleIncomingMidiMessage (MidiInput* source, const MidiMessage& message)
